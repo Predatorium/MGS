@@ -101,7 +101,7 @@ public class Character : MonoBehaviour
                 Reload = true;
             }
 
-            LifeBarre.fillAmount = Life / MaxLife;
+            LifeBarre.fillAmount = (float)Life / (float)MaxLife;
             LifeText.text = Life.ToString() + "/" + MaxLife.ToString();
         }
     }
